@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Codeclass</title>
+      <link rel="shortcut icon" type="image/png" href="Graphics/favicon.png"/>
+   </head>
+   <body>
+      <style>
+         .topnav {
+         overflow: hidden;
+         background-color: #333;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .topnav a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         html{
+         height: 100%;
+         width: 100%;
+         }
+         body {
+         margin: 0;
+         font-family: Verdana;
+         font-size: 18px;
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: #8F8F8F;
+         }
+         .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         .topnav a.active {
+         background-color: #9b42f5;
+         color: white;
+         }
+         .main {
+         padding: 10px;
+         height: 100%;
+         background-color: white;
+         margin-left: 70px;
+         margin-right: 70px;
+         }
+         .secondary {
+         padding: 10px;
+         height: 100%;
+         background-color: grey;
+         margin-left: 50px;
+         margin-right: 50px;
+         }
+         .h1{
+         text-align: center;
+         color: #9b42f5;
+         }
+         .center{
+         display: block;
+         margin: 0 auto;  
+         }
+         .round{
+         text-decoration: none;
+         color: black;
+         border-radius: 10px;
+         background: #3c3f45;
+         padding-top: 2px;
+         padding-bottom: 30px;
+         padding-right: 10px;
+         padding-left: 10px;
+         width: 60px;
+         height: 25px;
+         display: block;
+         margin: 0 auto;
+         cursor: pointer;
+         }
+         .input{
+         height: 50px; 
+         width: 300px; 
+         background-color: darkslategrey;
+         border: 0;
+         }
+         .leftButton{
+         position:absolute;
+         right:85%;
+         bottom:-20%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;  
+         }
+         .image{
+         position:absolute;
+         top: auto;
+         right: auto;
+         height: 150px;
+         width: 150px;
+         }
+      </style>
+      <div class="topnav">
+         <a href="index.htm">Home</a>
+         <a href="theBasics.htm">The Basics</a>
+         <a href="theSetup.htm">The Setup</a>
+         <a href="Elements.htm">Elements</a>
+         <a href="nextSteps.htm">Next Steps</a>
+         <a style="float: right" class="pointer active" href="Newsletter.htm">Sign up for the Newsletter!</a>
+      </div>
+      <br><br>
+      <div class="main">
+         <h1 class="h1">Newsletter</h1>
+         <hr>
+      </div>
+      <div class="secondary">
+         <img class="image" src="Graphics/newsletter.png">
+         <h3 style="text-align: center;">Sign up to Recieve Updates</h3>
+         <p style="text-align: center;">Subscribe to our newsletter to stay up-to-date with your Codeclass</p>
+         <input style="font-size: 25px"; type="email" name="email" Value="someone@example.com" class="center input" id="newsletter">
+         <a class="round" style="text-align: center;" onclick="Storage()">
+            <p>Submit</p>
+         </a>
+      </div>
+      <script>
+         function Storage(){
+          var b = document.getElementById("newsletter").value;
+          window.localStorage.setItem('Email', b);  
+          }
+      </script>
+   </body>
+</html>

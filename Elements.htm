@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Codeclass</title>
+	  <link rel="shortcut icon" type="image/png" href="Graphics/favicon.png"/>
+   </head>
+   <body>
+      <style>
+         .topnav {
+         overflow: hidden;
+         background-color: #333;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .topnav a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         html{
+         height: 360%;
+         width: 100%;
+         }
+         body {
+         margin: 0;
+         font-family: Verdana;
+         font-size: 18px;
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: #8F8F8F;
+         }
+         .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         .topnav a.active {
+         background-color: #9b42f5;
+         color: white;
+         }
+         .secondary {
+         padding: 10px;
+         height: 100%;
+         background-color: grey;
+         margin-left: 50px;
+         margin-right: 50px;
+         }
+         .center{
+         display: block;
+         margin: 0 auto;
+         height: 150px;
+         width: 300px;
+         }
+         .whiteSpace{
+         white-space: pre;
+         text-align: center;
+         }
+         .main{
+         padding: 10px;
+         height: 100%;
+         background-color: white;
+         margin-left: 70px;
+         margin-right: 70px;
+         }
+         .center{
+         display: block;
+         margin: 0 auto;
+         height: 150px;
+         width: 150px;  
+         }
+         .h1{
+         text-align: center;
+         color: #9b42f5;
+         }
+         .leftButton{
+         position:absolute;
+         right:85%;
+         bottom:-250%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;  
+         }
+         .rightButton{
+         position:absolute;
+         right:10%;
+         bottom:-250%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+		 .link{
+         text-decoration: none;
+         color: black;
+         }
+		  .link2{
+		  text-decoration: none;  
+		  }
+      </style>
+      <div class="topnav">
+         <a href="index.htm">Home</a>
+         <a href="theBasics.htm">The Basics</a>
+         <a href="theSetup.htm">The Setup</a>
+         <a class="active" href="Elements.htm">Elements</a>
+         <a href="nextSteps.htm">Next Steps</a>
+        <a style="float: right" class="pointer" href="Newsletter.htm">Sign up for the Newsletter!</a>
+      </div>
+      <br><br>
+      <div class="main">
+         <h1 class="h1" id="top">Elements</h1>
+         <hr>
+         <p>At the moment your webpage is blank, but now you will learn how to make visible elements. The most common and easiest elements are ones that display text on your webpage.</p>
+         <p>For example the <code>&lt;h1&gt; to &lt;h6&gt;</code> tags display headings of various sizes. <code>&lt;h1&gt;</code> being the biggest, and <code>&lt;h6&gt;</code> being the smallest.</p>
+         <h1 style="text-align: center;">This is h1</h1>
+         <h6 style="text-align: center;">This is h6</h6>
+      </div>
+      <div class="secondary">
+         <p>In your doucment open and close an <strong>h1</strong> tag inside of your body tag, and inside of the <strong>h1</strong> tag write <em>Hello World!</em>.</p>
+         <p>Your document should look like this. <code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+             
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hello World!&lt;h1&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+         </p>
+      </div>
+      <div class="main">
+         <p>To see your text you will need to save your document as a .html file. To do this press CTRL + S to bring up a save menu. Click on the Desktop save location of the left side of the save menu, then in the text box type index.html and press enter.</p>
+         <p>Minimize the notepad tab and find the index.html file on your desktop, then double click to open it. Now you have your own website!</p>
+         <p>Now you can add a title to your webiste. Inside of your head tag open and close a title tag and inside of it type My First Webpage!</p>
+         <p>Your document should look like this. <code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My First Website!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+         </p>
+         <p>Now when you save and refresh, you should see the title of <em>My First Website!</em> in the top left of the webpage.</p>
+      </div>
+      <div class="secondary">
+         <p>Next you will put an image on your webpage. To do this, right click on the image below and make sure it is saved as smiley.png, and that it is saved to your desktop.</p>
+         <p>Now inside your body tag make an image tag, your document should look like this.<code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My First Website!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;7
+                    &lt;img src="smiley.png" height=150px width=150px&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+         </p>
+         <img src="Graphics/smiley.png" class="center" height=150px width=150px>
+         <p style="text-align: center;">Now you have a smiley face on your webpage! You may have to edit the attribute of the image tag with <code>height=150px width=150px</code> to make it smaller.</p>
+      </div>
+      <div class="main">
+         <p>The <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> tags are used for making ordered and unordered lists. An ordered lists uses numbers to order the parts of the list, whereas an unordered lists use bullet points for the parts of the list.</p>
+         <p>To make an ordered list open and close an <code>&lt;ol&gt;</code> tag inside of the body tag. Inside of the <em>Ordered List</em> tag open and close an <code>&lt;li&gt;</code> tag which creates the list element, and put the content in the <strong>li</strong> tag.</p>
+         <p>Your document should look like this.<code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;My First Website!&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;1&lt;/li&gt;
+                        &lt;li&gt;2&lt;/li&gt;
+                        &lt;li&gt;3&lt;/li&gt;
+                        &lt;li&gt;4&lt;/li&gt;
+                    &lt;ol&gt;
+                    &lt;h1&gt;Hello World!&lt;/h1&gt;7
+                    &lt;img src="smiley.png" height=150px width=150px&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+         </p>
+      </div>
+      <div class="secondary">
+         <p>To make an unordered list it is the same process but instead of an <strong>ol</strong> tag it is a <strong>ul</strong> tag.</p>
+         <p>On your page that'll look like this</p>
+         <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+         </ul>
+      </div>
+      <div class="main">
+         <p>By now your webpage will look like this</p>
+         <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+         </ol>
+         <h1>Hello World!</h1>
+         <img src="Graphics/smiley.png" height="150px" width="150px" alt="Smiley">
+      </div>
+      <div class="secondary">
+         <p>Now if you're ready you can go to the next page!</p>
+      </div>
+	  <div class="leftButton">
+	  	 <a class="link" href="theSetup.htm">Previous Page</a> 
+	  </div>
+	  <div class="rightButton">
+	  	 <a class="link" href="nextSteps.htm">Next Page</a>
+	  </div>
+	  <div class="center">
+	     <a href="#top" class="link2">Back to the Top</a>
+	  </div>
+   </body>
+</html>

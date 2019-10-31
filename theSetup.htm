@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Codeclass</title>
+	  <link rel="shortcut icon" type="image/png" href="Graphics/favicon.png"/>
+   </head>
+   <body>
+      <style>
+         .topnav {
+         overflow: hidden;
+         background-color: #333;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         }
+         .topnav a {
+         float: left;
+         display: block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         html{
+         height: 160%;
+         width: 100%;
+         }
+         body {
+         margin: 0;
+         font-family: Verdana;
+         font-size: 18px;
+         }
+         .topnav {
+         overflow: hidden;
+         background-color: #8F8F8F;
+         }
+         .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+         }
+         .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+         }
+         .topnav a.active {
+         background-color: #9b42f5;
+         color: white;
+         }
+         .main{
+         padding: 10px;
+         height: 100%;
+         background-color: white;
+         margin-left: 70px;
+         margin-right: 70px;
+         }
+         .secondary {
+         padding: 10px;
+         height: 100%;
+         background-color: grey;
+         margin-left: 50px;
+         margin-right: 50px;
+         }
+         .center{
+         display: block;
+         margin: 0 auto;
+         height: 150px;
+         width: 300px;  
+         }
+         .whiteSpace{
+         white-space: pre;
+         text-align: center;
+         }
+         .h1{
+         text-align: center;
+         color: #9b42f5;
+         }
+         .leftButton{
+         position:absolute;
+         right:85%;
+         bottom:-45%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;  
+         }
+         .rightButton{
+         position:absolute;
+         right:10%;
+         bottom:-45%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+		 .link{
+         text-decoration: none;
+         color: black;
+         }
+      </style>
+      <div class="topnav">
+         <a href="index.htm">Home</a>
+         <a href="theBasics.htm">The Basics</a>
+         <a class="active" href="theSetup.htm">The Setup</a>
+         <a href="Elements.htm">Elements</a>
+         <a href="nextSteps.htm">Next Steps</a>
+         <a style="float: right" class="pointer" href="Newsletter.htm">Sign up for the Newsletter!</a>
+      </div>
+      <br><br>
+      <div class="main">
+         <h1 class="h1">The Setup</h1>
+         <hr>
+         <p>When coding your website, there is a couple of options for what you code it in. The best program for beginners is notepad, it should already by downloaded if your Windows version is greater than 1.0. To open Notepad, press the Windows Key + R, type Notepad and press enter.</p>
+         <img class="center" src="Graphics/run.png" height="150px" width="150px">
+      </div>
+      <div class="secondary">
+         <p>After opening Notepad, you will have a blank page. Your first line of code will be <code>&lt;!DOCTYPE html&gt;</code> this line tells the visitors of your page that it is being rendered in HTML. It isn't shown on your webpage, but is proper formatting.</p>
+      </div>
+      <div class="main">
+         <p>Before you add any content to your page, there are some other things you need to write on your document.</p>
+         <p>You are going to want to open and close a html tag, that will hold all your content.</p>
+         <p style="text-align: center;"><code>&lt;html&gt; &lt;/html&gt;</code></p>
+         <p>Inside of the html tag you will open and close a head tag, this will hold any references to other files and the title of your website.</p>
+         <p>Your document should now look like this <code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+             
+                &lt;/head&gt;
+            &lt;/html&gt;</code>
+         </p>
+      </div>
+      <div class="secondary">
+         <p>Once you have made your head tag, you will open and close a body tag. The body tag holds mostly the visible content of your page.</p>
+         <p>Your document should now look like this.<code class="whiteSpace">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+             
+                &lt;/head&gt;
+                &lt;body&gt;
+             
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+         </p>
+         <p>This is the basic setup for every webpage you will make. Now once you're ready you can go to the next page to learn how to get the first visible elements on your page.</p>
+      </div>
+	  <div class="leftButton">
+	  	 <a class="link" href="theBasics.htm">Previous Page</a> 
+	  </div>
+	  <div class="rightButton">
+	     <a class="link" href="Elements.htm">Next Page</a>
+	  </div>
+   </body>
+</html>
